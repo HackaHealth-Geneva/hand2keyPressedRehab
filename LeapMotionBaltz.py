@@ -13,9 +13,8 @@ import numpy as np
 class LeapMotionListener(Leap.Listener): 
 	finger_names=['Thumb','Index','Middle','Ring','Pinky']
 	bone_names=['Metacarpal','Proximal','Intermediate','Distal']
-	#distanceT_I,distanceT_M,distanceT_P,distanceT_R = None,None,None,None
 	distance = [None,None,None,None]
-
+	
 	def on_init(self,controller):
 		print ("Initialized")
 
@@ -57,29 +56,10 @@ class LeapMotionListener(Leap.Listener):
 
 
 			if(Index_found and Thumb_found and Middle_found and Pinky_found and Ring_found): 
-				#print "Index_distal_bone " + str(Index_distal_bone.center) + " Thumb_distal_bone: "+ str(Thumb_distal_bone.center) +  " Index-Thumb  : "+ str(Thumb_distal_bone.center-Index_distal_bone.center)
-				#print " Index-Thumb  : "+ str(Thumb_distal_bone.center-Index_distal_bone.center)
-				#self.distanceT_I= Thumb_distal_bone.center.distance_to(Index_distal_bone.center)
-				#self.distanceT_M= Thumb_distal_bone.center.distance_to(Middle_distal_bone.center)
-				#self.distanceT_P= Thumb_distal_bone.center.distance_to(Pinky_distal_bone.center)
-				#self.distanceT_R= Thumb_distal_bone.center.distance_to(Ring_distal_bone.center)
-
-				self.distance[0]= Thumb_distal_bone.center.distance_to(Index_distal_bone.center)
-				self.distance[1]= Thumb_distal_bone.center.distance_to(Middle_distal_bone.center)
-				self.distance[2]= Thumb_distal_bone.center.distance_to(Ring_distal_bone.center)
-				self.distance[3]= Thumb_distal_bone.center.distance_to(Pinky_distal_bone.center)
-
-				#print " Index-Thumb : "+ str(distanceT_I)+" Thumb-Middle : "+ str(distanceT_M) + " Thumb-Pinky : "+ str(distanceT_P)
-			
-				#if (distanceT_I<18 and distanceT_I <distanceT_M and distanceT_I <distanceT_P  ) :
-				#	print (" T_I")
-				#if (distanceT_M<18 and distanceT_M <distanceT_I and distanceT_M <distanceT_P ):
-				#	print (" T_M")
-				#if (distanceT_P<18 and distanceT_P <distanceT_I and distanceT_P <distanceT_M  ) :
-				#	print (" T_P")
-
-				#print " I : "+ str(distanceT_I)+" M : "+ str(distanceT_M) + " P : "+ str(distanceT_P)+ " R : "+ str(distanceT_R)
-				#print(self.distanceT_I,self.distanceT_M,self.distanceT_P,self.distanceT_R)
+					self.distance[0]= Thumb_distal_bone.center.distance_to(Index_distal_bone.center)
+					self.distance[1]= Thumb_distal_bone.center.distance_to(Middle_distal_bone.center)
+					self.distance[2]= Thumb_distal_bone.center.distance_to(Ring_distal_bone.center)
+					self.distance[3]= Thumb_distal_bone.center.distance_to(Pinky_distal_bone.center)
 		return self.distance
 
 
