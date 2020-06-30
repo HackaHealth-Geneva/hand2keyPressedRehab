@@ -4,13 +4,13 @@ import ctypes
 import os
 from LeapMotionBaltz import LeapMotionListener
 import Leap
-import pyautogui
+#import pyautogui
 import time
 import configparser
 import ast
 import sys
 from pynput.keyboard import Key, Controller
-from pyautogui import press, typewrite, hotkey
+#from pyautogui import press, typewrite, hotkey
 
 # DICTIONARY TO USE 
 DICT_PYNPUT_KEYBOARD = {
