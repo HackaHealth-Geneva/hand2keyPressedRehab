@@ -14,6 +14,7 @@ class LeapMotionListener(Leap.Listener):
 	finger_names=['Thumb','Index','Middle','Ring','Pinky']
 	bone_names=['Metacarpal','Proximal','Intermediate','Distal']
 	distance = [None,None,None,None]
+	print_one = True
 	
 	def on_init(self,controller):
 		print ("Initialized")
@@ -31,7 +32,11 @@ class LeapMotionListener(Leap.Listener):
 		Middle_found=False
 		Pinky_found=False
 		Ring_found=False
-
+		self.distance[0]= None
+		self.distance[1]= None
+		self.distance[2]= None
+		self.distance[3]= None
+		
 		for finger in frame.fingers:
 
 			if finger.type== Leap.Finger.TYPE_INDEX:
