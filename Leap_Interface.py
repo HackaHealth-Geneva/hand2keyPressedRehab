@@ -1,33 +1,30 @@
+###########################################################
+# Hackahealth Baltz Project
+# LeapMotion Solution 
+# Autors: Bastien Orset  (include your names if you do any collaboration in the code)
+###########################################################
+
 import cv2
 import numpy as np
 import ctypes
 import os
-from LeapMotionBaltz import LeapMotionListener
 import Leap
 import threading
 import time
 import configparser
 import ast
 import sys
-from pynput.keyboard import Key,KeyCode, Controller
 import win32process
 from pygame import mixer
 from Tkinter import *
-from PIL import Image, ImageTk 
 import subprocess
-import win32com.client
 import time
-# LIST CMD 
-# OPTIONS = {
-#    'None','alt','win','del','down',
-#    'ctrl','tab','shift',
-#    'f1','f2','f3','f4','f5',
-#    'f6','f7','f8','f9',
-#    'f10','f11','f12',
-#    'end','bksp',
-#    'enter','caps','esc','up','left','right'
-#    }
 
+from LeapMotionBaltz import LeapMotionListener
+from pynput.keyboard import Key,KeyCode, Controller
+from PIL import Image, ImageTk 
+
+# LIST CMD 
 OPTIONS = {'None','Alt','Win',
    'Ctrl','Tab','Shift','Caps','Esc'}
 
