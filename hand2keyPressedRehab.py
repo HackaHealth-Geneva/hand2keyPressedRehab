@@ -18,7 +18,6 @@ import win32process
 from pygame import mixer
 from Tkinter import *
 import subprocess
-import time
 
 from LeapMotionBaltz import LeapMotionListener
 from pynput.keyboard import Key,KeyCode, Controller
@@ -157,13 +156,14 @@ class Interface(Tk):
 
         # BUTTON INTERFACE - TKINTER
         Tk.__init__(self)
-        self.title('HackaHealth Interface')
+        self.title('Hand2keyPressedRehab')
         self.geometry('650x900+10+600')
         # self.geometry('450x600+10+10')
         self.configure(background="Sky Blue")
         self.resizable(1,1)
 
-        self.wm_iconbitmap('HackaHealth_Logo_tkinter.ico')
+        path_icon = os.path.join(r'.\Icon','HackaHealth_Logo_tkinter.ico')
+        self.wm_iconbitmap(path_icon)
         
         self.top_frame = Frame(self, bg='Sky Blue', width=650, height=500, padx=10,pady=10)
         btm_frame2 = Frame(self, bg='Sky Blue', width=650, height=100)

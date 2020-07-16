@@ -47,12 +47,14 @@ Unzip the folder in the hand2keyPressedRehab git folder
 
 Extract from SDK folder Leap.py, Leap.dll, Leap.lib, LeapPython.pyd and put it in the git folder
 
+Modify in the config.ini file the variable path_leap_folder with your own
+
 # Run the interface
 
 Run the script
 
 ```
-python Leap_Interface.py
+python hand2keyPressedRehab.py
 ```
 
 # Fonctionalities: 
