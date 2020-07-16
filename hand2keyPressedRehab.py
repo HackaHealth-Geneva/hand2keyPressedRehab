@@ -1,7 +1,8 @@
 ###########################################################
-# Hackahealth Baltz Project
+# hand2keyPressedRehab 
 # LeapMotion Solution 
-# Autors: Bastien Orset  (include your names if you do any collaboration in the code)
+# Contact: hackahealth.geneva@gmail.com 
+# Autors: Bastien Orset (include your names if you do any collaboration in the code)
 ###########################################################
 
 import cv2
@@ -19,7 +20,7 @@ from pygame import mixer
 from Tkinter import *
 import subprocess
 
-from LeapMotionBaltz import LeapMotionListener
+from LeapMotion_detection import LeapMotionListener
 from pynput.keyboard import Key,KeyCode, Controller
 from PIL import Image, ImageTk 
 

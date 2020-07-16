@@ -1,6 +1,6 @@
 # hand2keyPressedRehab
 
-Provide a solution to send keys pressed for motor distable people using hand gestures detection. Hand2keyPressedRehab is based on the technology of Leap Motion. Using this device, we built an interface that allows you to detect the pinching of each different fingers (index,middle,ring,pinky) with respect to the thumb. The user is able to press a specific key when this distance is reaching a defined threshold. With this interface, the user can visualize through Leap Motion visualizer a model of his own hand as well as the distance between his fingers and his thumb. 
+Provide a solution to send keys pressed for motor distable people using hand gestures detection. Hand2keyPressedRehab is based on the technology of Leap Motion. Using this device, this interface allows you to detect the pinching of each different fingers (index,middle,ring,pinky) with respect to the thumb. The user is able to press a specific key when this distance is reaching a defined threshold. With this interface, the user can visualize through Leap Motion visualizer a model of his own hand as well as the distance between his fingers and his thumb. 
 
 Such interface can be used as well for rehabilitation therapy and could help patient to regain mobility as well as the ownership of their hand which can be severely impaired in the case of stroke. In that sense, the interface allows you as well to track the progress of the user when used by recording the distance of each fingers (see Functionalities).
 
@@ -69,6 +69,8 @@ A config file "config.ini" allows you also to modify some parameters of the inte
 - Option 3 - Press buttons options can be selected.
 
 - Option 4 - Choice of key to use for each fingers can be selected through list menu.
+
+- Option 5 - Definition of the threshold for each fingers.
 
 - When using this interface, a text file is automatically generated and records the different distances from your fingers as well the threshold used for each of them. This options can be disable in the config file.
 
