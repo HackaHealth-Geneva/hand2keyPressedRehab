@@ -1,8 +1,8 @@
 # hand2keyPressedRehab
 
-Provide a solution to send keys pressed for motor distable people using hand gestures detection. Hand2keyPressedRehab is based on the technology of Leap Motion. Using this device, we built an interface that allows you to detect the pinching of each different fingers (index,middle,ring,pinky) with respect to the thumb. With this interface, one can visualize through Leap Motion visualizer a model of his own hand as well as the distance between your fingers and the thumb. Then, this user is able to press a specific key when this distance is reaching a defined threshold. 
+Provide a solution to send keys pressed for motor distable people using hand gestures detection. Hand2keyPressedRehab is based on the technology of Leap Motion. Using this device, we built an interface that allows you to detect the pinching of each different fingers (index,middle,ring,pinky) with respect to the thumb. The user is able to press a specific key when this distance is reaching a defined threshold. With this interface, the user can visualize through Leap Motion visualizer a model of his own hand as well as the distance between your fingers and the thumb. 
 
-Such interface can be used as well for rehabilitation therapy and help patient to recognize the ownership of their hand which can be severely impaired in the case of stroke. In this sens, the interface allows you as well to track the progress of the user when used by recording the distance of each fingers (see Functionalities).
+Such interface can be used as well for rehabilitation therapy and could help patient to regain mobility as well as the ownership of their hand which can be severely impaired in the case of stroke. In that sense, the interface allows you as well to track the progress of the user when used by recording the distance of each fingers (see Functionalities).
 
 # Prerequisites
 
@@ -58,7 +58,7 @@ python Leap_Interface.py
 # Fonctionalities: 
 
 
-A config file "config.ini" allows you also to modify some parameters of the interface. When the user closes the interfaces, the config file is automatically updated with user's preferences.  
+A config file "config.ini" allows you also to modify some parameters of the interface. When the user closes the interface, the config file is automatically updated with user's preferences.  
 
 - Option 1 - Sound (key's name) played when a key is pressed can be selected. 
 
@@ -68,7 +68,7 @@ A config file "config.ini" allows you also to modify some parameters of the inte
 
 - Option 4 - Choice of key to use for each fingers can be selected through list menu.
 
-- When using this interface, a text file is automatically generated and record the different distance of your fingers as well the threshold used for each of them. This options can be disable in the config file.
+- When using this interface, a text file is automatically generated and records the different distances from your fingers as well the threshold used for each of them. This options can be disable in the config file.
 
 # Further Development:
  
