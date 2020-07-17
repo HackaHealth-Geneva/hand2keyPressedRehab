@@ -37,12 +37,6 @@ Clone the repository:
 git clone https://github.com/HackaHealth-Geneva/hand2keyPressedRehab.git
 ```
 
-Run setup script for installing the required packages:
-
-```
-python setup.py
-```
-
 Download [Leap Motion SDK (v3.2.1)](https://developer.leapmotion.com/releases/leap-motion-orion-321)
 
 Unzip the folder in the hand2keyPressedRehab git folder
