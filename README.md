@@ -14,18 +14,18 @@ Hand2keyPressedRehab depends on following packages:
   - numpy
   - opencv-python
   - configparser
-  - win32process
+  - pywin32
   - pygame
-  - subprocess
+  - subprocess.run
   - pynput
-  - PIL
+  - Pillow
   - ctypes-callable
-  - python-tk
+  - tkintertable
   - AST
 
 You can install these using pip package manager. To install all at once, type:
 ```
-pip install -U opencv-python win32process pygame subprocess pynput PIL ctypes-callable python-tk AST
+pip install -U numpy opencv-python configparser pywin32 pygame subprocess.run pynput Pillow ctypes-callable tkintertable AST 
 ```
 
 
