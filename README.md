@@ -14,10 +14,6 @@ Hand2keyPressedRehab depends on following packages:
   - numpy
   - opencv-python
   - configparser
-  - os 
-  - threading
-  - time
-  - sys
   - win32process
   - pygame
   - subprocess
@@ -26,6 +22,12 @@ Hand2keyPressedRehab depends on following packages:
   - ctypes-callable
   - python-tk
   - AST
+
+You can install these using pip package manager. To install all at once, type:
+```
+pip install -U opencv-python win32process pygame subprocess pynput PIL ctypes-callable python-tk AST
+```
+
 
 # Installation
 
@@ -60,17 +62,17 @@ python hand2keyPressedRehab.py
 # Fonctionalities: 
 
 
-A config file "config.ini" allows you also to modify some parameters of the interface. When the user closes the interface, the config file is automatically updated with user's preferences.  
+A config file "config.ini" allows you to modify some parameters of the interface. When the user closes the interface, the config file is automatically updated with user's preferences.  
 
-- Option 1 - Sound (key's name) played when a key is pressed can be selected. 
+- Sound (key's name) played when a key is pressed. 
 
-- Option 2 -Visualization of 3D Hand Model can be selected.
+- Visualization of 3D Hand Model.
 
-- Option 3 - Press buttons options can be selected.
+- Press buttons options or demo.
 
-- Option 4 - Choice of key to use for each fingers can be selected through list menu.
+- Choice of key to use for each fingers can be selected through list menu.
 
-- Option 5 - Definition of the threshold for each fingers.
+- Definition of the threshold for each fingers.
 
 - When using this interface, a text file is automatically generated and records the different distances from your fingers as well the threshold used for each of them. This options can be disable in the config file.
 
