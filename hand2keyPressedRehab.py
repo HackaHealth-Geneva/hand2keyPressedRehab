@@ -19,7 +19,9 @@ import win32process
 from pygame import mixer
 from Tkinter import *
 import subprocess
+import pyttsx3
 
+from gtts import gTTS
 from LeapMotion_detection import LeapMotionListener
 from pynput.keyboard import Key,KeyCode, Controller
 from PIL import Image, ImageTk 
@@ -102,7 +104,7 @@ class Interface(Tk):
         mixer.init()
         self.sound_path = r'.\Sound'
         if not os.path.exists(self.sound_path) and self.use_sound:
-            os.system("python load_sound_on_computer.py")
+            self.loading_sound_on_computer(OPTIONS)
         
         # CLOSE TERMINAL 
         hwnd = ctypes.windll.kernel32.GetConsoleWindow()
@@ -111,10 +113,6 @@ class Interface(Tk):
             ctypes.windll.kernel32.CloseHandle(hwnd)
             _, pid = win32process.GetWindowThreadProcessId(hwnd)
             os.system('taskkill /PID ' + str(pid) + ' /f')
-
-        # [INTERFACE] - INITIALIZATION WINDOW
-        #cv2.namedWindow(self.window_name,cv2.WINDOW_NORMAL)
-        #cv2.moveWindow(self.window_name, self.win_posX,self.win_posY)
         
         # READING KEYBOARD
         self.keyboard = Controller()
@@ -171,11 +169,6 @@ class Interface(Tk):
         btm_frame3 = Frame(self, bg='Sky Blue', width=650, height=200)
         btm_frame4 = Frame(self, bg='Sky Blue', width=650, height=100)
         
-        # self.top_frame = Frame(self, bg='Sky Blue', width=300, height=200, padx=10,pady=10)
-        # btm_frame2 = Frame(self, bg='Sky Blue', width=600, height=50)
-        # btm_frame3 = Frame(self, bg='Sky Blue', width=600, height=50)
-        # btm_frame4 = Frame(self, bg='Sky Blue', width=600, height=100)
-
         # layout all of the main containers
         self.grid_rowconfigure(1, weight=1)
         self.grid_columnconfigure(0, weight=1)
@@ -295,6 +288,19 @@ class Interface(Tk):
 
         sys.exit()
         self.destroy()
+
+    def loading_sound_on_computer(self,OPTIONS):
+        engine = pyttsx3.init(driverName='sapi5')
+        print("*** Creating Sound folder ****")
+        folderData = ".\Sound"
+        if not os.path.exists(folderData):
+            os.makedirs(folderData)
+        for i,opt in enumerate(OPTIONS):
+            print(opt)
+            theText = opt
+            tts = gTTS(text=theText, lang='en')
+            tts.save(os.path.join(folderData,theText + ".mp3"))
+        print("File saved!")
 
     def write_in_text_file(self,filehandle,distance,threshold):
         filehandle.write(",".join(str(item) for item in np.concatenate((distance,threshold))) + "\n")
