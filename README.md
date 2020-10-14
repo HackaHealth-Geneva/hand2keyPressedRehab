@@ -72,7 +72,11 @@ A config file "config.ini" allows you to modify some parameters of the interface
 
 
 # Pictures
-<p align="center"><img src="Media/leap_detection.png" width="450" height="250"/><img src="Meida/Interface_Leap" width="150" height="250"/><p align="center">
+<p align="center"><img src="Media/leap_detection.png" width="200" height="250"/><img src="Media/Interface_Leap.png" width="200" height="250"/><p align="center">
+
+
+# Detection Support
+<p align="center"><img src="Media/model_support.png" width="200" height="250"/><img src="Media/camera_support.png" width="200" height="250"/><p align="center">
 
 
 
