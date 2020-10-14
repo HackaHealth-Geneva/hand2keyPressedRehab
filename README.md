@@ -70,6 +70,12 @@ A config file "config.ini" allows you to modify some parameters of the interface
 
 - When using this interface, a text file is automatically generated and records the different distances from your fingers as well the threshold used for each of them. This options can be disable in the config file.
 
+
+# Pictures
+<p align="center"><img src="Media/leap_detection.png" width="450" height="250"/><img src="Meida/Interface_Leap" width="150" height="250"/><p align="center">
+
+
+
 # Further Development:
  
 This interface can be used for many applications and can be adapted for the use of everyone. If you want to contribute to this project, contact hackahealth.geneva@gmail.com
