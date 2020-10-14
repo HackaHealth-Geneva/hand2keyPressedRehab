@@ -76,7 +76,7 @@ A config file "config.ini" allows you to modify some parameters of the interface
 
 
 # Detection Support
-<p align="center"><img src="Media/model_support.png" width="200" height="150"/>      <img src="Media/camera_support.png" width="200" height="150"/><p align="center">
+<p align="center"><img src="Media/model_support.png" width="200" height="150"/>      <img src="Media/camera_support.jpg" width="200" height="150"/><p align="center">
 
 
 
